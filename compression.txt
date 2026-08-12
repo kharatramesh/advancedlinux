@@ -1,0 +1,76 @@
+  100  # file I/O Operations
+  101  # touch
+  102   #dd
+  103  # cat
+  104  # >
+  105  # >>
+  106  # editor : vi, nano , emacs
+  107  mkdir /session3
+  108  cd /session3/
+  109  pwd
+  110  touch 1.txt
+  111  ls
+  112  touch {1..10}.txt
+  113  ls
+  114  touch {a..d}.txt
+  115  ls
+  116  # dd -- is to create file of any size
+  117  dd if=/dev/zero of=samosa.txt bs=1M count=1
+  118  dd if=/dev/zero of=samosa.txt bs=1M count=10
+  119  # ls
+  120  ls
+  121  ls -lh samosa.txt
+  122  clear
+  123  cat > dosa.txt
+  124  ls -l dosa.txt
+  125  cat dosa.txt
+  126  cat >> pavbhaji.txt
+  127  cat pavbhaji.txt
+  128  ls -l dosa.txt
+  129  cat > dosa.txt
+  130  cat dosa.txt
+  131  cat pavbhaji.txt
+  132  cat >> pavbhaji.txt
+  133  cat pavbhaji.txt
+  134  history
+==========================
+ 303  clear
+  304  dd if=/dev/zero of=1.txt bs=1M count=1000
+  305  ls -lh 1.txt
+  306  dd if=/dev/zero of=2.txt bs=1M count=1000
+  307  dd if=/dev/zero of=3.txt bs=1M count=1000
+  308  ls -lh
+  309  # Arichval
+  310  # Compression
+  311  # uncompress
+  312  # Archival
+  313  ls
+  314  tar -cvf cricket.tar 1.txt 2.txt 3.txt
+  315  ls -lh cricket.tar
+  316  gzip cricket.tar
+  317  ls -lh cricket.tar.gz
+  318  bzip2 cricket.tar.gz
+  319  ls -lh cricket.tar.gz.bz2
+  320  ls
+  321  rm -fr 1.txt 2.txt 3.txt A1 A2
+  322  ls
+  323  ls -lh cricket.tar.gz.bz2
+  324  ls
+  325  cp cricket.tar.gz.bz2 /home/
+  326  cd /home/
+  327  ls
+  328  history
+  329  ls
+  330  ls -lh cricket.tar.gz.bz2
+  331  bunzip2 cricket.tar.gz.bz2
+  332  ls -lh cricket.tar.gz
+  333  gunzip cricket.tar.gz
+  334  ls -lh cricket.tar
+  335  tar -xvf cricket.tar
+  336  ls -lh
+  337  # limpel ziv algorithm
+  338  man zip
+  339  man gzip
+  340  ls
+  341  clear
+  342  history
